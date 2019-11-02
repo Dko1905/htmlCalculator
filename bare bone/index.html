@@ -20,10 +20,10 @@
     <input readonly class="textview" id="textview" type="text">
     <table>
       <tr>
-        <td><input class="button", type="button", value="C"></td>
-        <td><input class="button", type="button", value="^"></td>
-        <td><input class="button", type="button", value="UU"></td>
-        <td><input class="button", type="button", value="DEL"></td>
+        <td><input class="button", type="button", value="C" onclick="delAll();"></td>
+        <td><input class="button", type="button", value="(" onclick="insert('(')"></td>
+        <td><input class="button", type="button", value=")" onclick="insert(')')"></td>
+        <td><input class="button", type="button", value="DEL" onclick='delChar();'></td>
       </tr>
       <tr>
         <td><input class="button", type="button", onclick="insert('7')", value="7"></td>
@@ -35,7 +35,7 @@
         <td><input class="button", type="button", onclick="insert('4')", value="4"></td>
         <td><input class="button", type="button", onclick="insert('5')", value="5"></td>
         <td><input class="button", type="button", onclick="insert('6')", value="6"></td>
-        <td><input class="button", type="button", onclick="insert('*')", value="X"></td>
+        <td><input class="button", type="button", onclick="insert('*')", value="x"></td>
       </tr>
       <tr>
         <td><input class="button", type="button", onclick="insert('1')", value="1"></td>
@@ -45,7 +45,7 @@
       </tr>
       <tr>
         <td><input class="button", type="button", onclick="insert('0')", value="0"></td>
-        <td><input class="button", type="button", onclick="insert(',')", value=","></td>
+        <td><input class="button", type="button", onclick="insert('.')", value="."></td>
         <td><input class="button", type="button", onclick="calculate()" value="="></td>
         <td><input class="button", type="button", onclick="insert('+')", value="+"></td>
       </tr>
